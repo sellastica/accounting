@@ -7,32 +7,62 @@ class VatRateTypeFactory
 	private static $vatRateByYears = [
 		'CZ' => [
 			2018 => [
-				0 => VatRateType::ZERO,
 				21 => VatRateType::BASIC,
 				15 => VatRateType::REDUCED1,
 				10 => VatRateType::REDUCED2,
+				0 => VatRateType::ZERO,
 			],
 			2019 => [
-				0 => VatRateType::ZERO,
 				21 => VatRateType::BASIC,
 				15 => VatRateType::REDUCED1,
 				10 => VatRateType::REDUCED2,
+				0 => VatRateType::ZERO,
+			],
+		],
+		'DE' => [
+			2019 => [
+				19 => VatRateType::BASIC,
+				7 => VatRateType::REDUCED1,
+				0 => VatRateType::ZERO,
+			],
+		],
+		'GB' => [
+			2019 => [
+				20 => VatRateType::BASIC,
+				5 => VatRateType::REDUCED1,
+				0 => VatRateType::ZERO,
+			],
+		],
+		'IT' => [
+			2019 => [
+				22 => VatRateType::BASIC,
+				10 => VatRateType::REDUCED1,
+				5 => VatRateType::REDUCED2,
+				4 => VatRateType::REDUCED3,
+				0 => VatRateType::ZERO,
+			],
+		],
+		'PL' => [
+			2019 => [
+				23 => VatRateType::BASIC,
+				8 => VatRateType::REDUCED1,
+				5 => VatRateType::REDUCED2,
+				0 => VatRateType::ZERO,
 			],
 		],
 		'SK' => [
 			2018 => [
-				0 => VatRateType::ZERO,
 				20 => VatRateType::BASIC,
 				10 => VatRateType::REDUCED1,
+				0 => VatRateType::ZERO,
 			],
 			2019 => [
-				0 => VatRateType::ZERO,
 				20 => VatRateType::BASIC,
 				10 => VatRateType::REDUCED1,
+				0 => VatRateType::ZERO,
 			],
 		],
 	];
-
 
 	/**
 	 * @param float $vatRate

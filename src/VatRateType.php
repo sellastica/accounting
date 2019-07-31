@@ -6,7 +6,8 @@ class VatRateType
 	const ZERO = 'zero',
 		BASIC = 'basic',
 		REDUCED1 = 'reduced1',
-		REDUCED2 = 'reduced2';
+		REDUCED2 = 'reduced2',
+		REDUCED3 = 'reduced3';
 
 	/** @var string */
 	private $type;
