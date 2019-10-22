@@ -98,9 +98,9 @@ class VatRateTypeFactory
 	 */
 	public static function getVatRate(
 		\Sellastica\Localization\Model\Country $country,
+		string $vatRateType = VatRateType::BASIC,
 		\DateTime $dateTime = null,
-		bool $need = true,
-		string $vatRateType = VatRateType::BASIC
+		bool $need = true
 	): ?float
 	{
 		$year = self::getYear($dateTime);
